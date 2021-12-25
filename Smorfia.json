@@ -1,0 +1,362 @@
+{
+    "1": {
+        "italiano": "L'Italia",
+        "napoletano": "L'Italia"
+    },
+    "2": {
+        "italiano": "La bambina",
+        "napoletano": "'A piccerella"
+    },
+    "3": {
+        "italiano": "La gatta",
+        "napoletano": "'A jatta"
+    },
+    "4": {
+        "italiano": "Il maiale",
+        "napoletano": "'O puorco"
+    },
+    "5": {
+        "italiano": "La mano",
+        "napoletano": "'A mano"
+    },
+    "6": {
+        "italiano": "Quella che guarda verso terra",
+        "napoletano": "Chella ca guarda 'nterra"
+    },
+    "7": {
+        "italiano": "Il vaso di creta",
+        "napoletano": "'O vasetto"
+    },
+    "8": {
+        "italiano": "La Madonna",
+        "napoletano": "'A Maronna"
+    },
+    "9": {
+        "italiano": "La figliolanza",
+        "napoletano": "'A figliata"
+    },
+    "10": {
+        "italiano": "I fagioli",
+        "napoletano": "'E fasule"
+    },
+    "11": {
+        "italiano": "I topolini",
+        "napoletano": "'E suricille"
+    },
+    "12": {
+        "italiano": "Il soldato",
+        "napoletano": "'O surdato"
+    },
+    "13": {
+        "italiano": "Sant'Antonio",
+        "napoletano": "Sant'Antonio"
+    },
+    "14": {
+        "italiano": "L'ubriaco",
+        "napoletano": "'O mbriaco"
+    },
+    "15": {
+        "italiano": "Il ragazzo",
+        "napoletano": "'O guaglione"
+    },
+    "16": {
+        "italiano": "Il culo",
+        "napoletano": "'O culo"
+    },
+    "17": {
+        "italiano": "La sfortuna",
+        "napoletano": "'A disgrazia"
+    },
+    "18": {
+        "italiano": "Il sangue",
+        "napoletano": "'O ssango"
+    },
+    "19": {
+        "italiano": "La risata",
+        "napoletano": "'A resata"
+    },
+    "20": {
+        "italiano": "La festa",
+        "napoletano": "'A festa"
+    },
+    "21": {
+        "italiano": "La donna nuda",
+        "napoletano": "'A femmena annura"
+    },
+    "22": {
+        "italiano": "Il pazzo",
+        "napoletano": "'O pazzo"
+    },
+    "23": {
+        "italiano": "Lo scemo",
+        "napoletano": "'O scemo"
+    },
+    "24": {
+        "italiano": "Le guardie",
+        "napoletano": "'E Gguardie"
+    },
+    "25": {
+        "italiano": "Natale",
+        "napoletano": "Natale"
+    },
+    "26": {
+        "italiano": "La piccola Anna",
+        "napoletano": "Nanninella"
+    },
+    "27": {
+        "italiano": "Il pitale",
+        "napoletano": "'O càntaro"
+    },
+    "28": {
+        "italiano": "I seni",
+        "napoletano": "'E zzizze"
+    },
+    "29": {
+        "italiano": "Il padre dei bambini",
+        "napoletano": "'O pate d' 'e ccriature"
+    },
+    "30": {
+        "italiano": "Le palle del tenente",
+        "napoletano": "'E ppalle d' 'o tenente"
+    },
+    "31": {
+        "italiano": "Il padrone di casa",
+        "napoletano": "'O patrone 'e casa"
+    },
+    "32": {
+        "italiano": "Il capitone",
+        "napoletano": "'O capitone"
+    },
+    "33": {
+        "italiano": "Gli anni di Cristo",
+        "napoletano": "Ll'anne 'e Cristo"
+    },
+    "34": {
+        "italiano": "La testa",
+        "napoletano": "'A capa"
+    },
+    "35": {
+        "italiano": "L'uccellino",
+        "napoletano": "Ll'aucielluzzo"
+    },
+    "36": {
+        "italiano": "Le nacchere",
+        "napoletano": "'E ccastagnelle"
+    },
+    "37": {
+        "italiano": "Il monaco",
+        "napoletano": "'O monaco"
+    },
+    "38": {
+        "italiano": "Le botte",
+        "napoletano": "'E mmazzate"
+    },
+    "39": {
+        "italiano": "Il cappio al collo",
+        "napoletano": "'A fune 'n ganna"
+    },
+    "40": {
+        "italiano": "La noia",
+        "napoletano": "'A noja"
+    },
+    "41": {
+        "italiano": "Il coltello",
+        "napoletano": "'O curtiello"
+    },
+    "42": {
+        "italiano": "Il caffè",
+        "napoletano": "'O ccafè'"
+    },
+    "43": {
+        "italiano": "La donna al balcone",
+        "napoletano": "Onna pereta fore ô barcone"
+    },
+    "44": {
+        "italiano": "La prigione",
+        "napoletano": "'E ccancelle"
+    },
+    "45": {
+        "italiano": "Il vino buono",
+        "napoletano": "'O vino bbuono"
+    },
+    "46": {
+        "italiano": "Il denaro",
+        "napoletano": "'E denare"
+    },
+    "47": {
+        "italiano": "Il morto",
+        "napoletano": "'O muorto"
+    },
+    "48": {
+        "italiano": "Il morto che parla",
+        "napoletano": "'O muorto che pparla"
+    },
+    "49": {
+        "italiano": "La carne",
+        "napoletano": "'O piezz' 'e carne"
+    },
+    "50": {
+        "italiano": "Il pane",
+        "napoletano": "'O ppane"
+    },
+    "51": {
+        "italiano": "Il giardino",
+        "napoletano": "'O ciardino"
+    },
+    "52": {
+        "italiano": "La mamma",
+        "napoletano": "'A mamma"
+    },
+    "53": {
+        "italiano": "Il vecchio",
+        "napoletano": "'O viecchio"
+    },
+    "54": {
+        "italiano": "Il cappello",
+        "napoletano": "'O cappiello"
+    },
+    "55": {
+        "italiano": "La musica",
+        "napoletano": "'A museca"
+    },
+    "56": {
+        "italiano": "La caduta",
+        "napoletano": "'A caruta"
+    },
+    "57": {
+        "italiano": "Il gobbo",
+        "napoletano": "'O scartellato"
+    },
+    "58": {
+        "italiano": "Il pacco",
+        "napoletano": "'O paccotto"
+    },
+    "59": {
+        "italiano": "I peli",
+        "napoletano": "'E pile"
+    },
+    "60": {
+        "italiano": "Il lamento",
+        "napoletano": "'O lamiento"
+    },
+    "61": {
+        "italiano": "Il cacciatore",
+        "napoletano": "'O cacciatore"
+    },
+    "62": {
+        "italiano": "Il morto ammazzato",
+        "napoletano": "'O muorto acciso"
+    },
+    "63": {
+        "italiano": "La sposa",
+        "napoletano": "'A sposa"
+    },
+    "64": {
+        "italiano": "La marsina",
+        "napoletano": "'A sciammerìa"
+    },
+    "65": {
+        "italiano": "Il pianto",
+        "napoletano": "'O chianto"
+    },
+    "66": {
+        "italiano": "Le due zitelle",
+        "napoletano": "'E ddoje zetelle"
+    },
+    "67": {
+        "italiano": "Il totano nella chitarra",
+        "napoletano": "'O totaro dint' 'a chitarra"
+    },
+    "68": {
+        "italiano": "La zuppa cotta",
+        "napoletano": "'A zuppa cotta"
+    },
+    "69": {
+        "italiano": "Sottosopra",
+        "napoletano": "Sott' e 'ncoppa"
+    },
+    "70": {
+        "italiano": "Il palazzo",
+        "napoletano": "'O palazzo"
+    },
+    "71": {
+        "italiano": "L'uomo di merda",
+        "napoletano": "L'omm 'e mmerda"
+    },
+    "72": {
+        "italiano": "Lo stupore",
+        "napoletano": "'A maraviglia"
+    },
+    "73": {
+        "italiano": "L'ospedale",
+        "napoletano": "'O spitale"
+    },
+    "74": {
+        "italiano": "La grotta",
+        "napoletano": "'A grotta"
+    },
+    "75": {
+        "italiano": "Pulcinella",
+        "napoletano": "Pulecenella"
+    },
+    "76": {
+        "italiano": "La fontana",
+        "napoletano": "'A funtana"
+    },
+    "77": {
+        "italiano": "I diavoli",
+        "napoletano": "'E riavulille"
+    },
+    "78": {
+        "italiano": "La bella figliola",
+        "napoletano": "'A bbella figliola"
+    },
+    "79": {
+        "italiano": "Il ladro",
+        "napoletano": "'O mariuolo"
+    },
+    "80": {
+        "italiano": "La bocca",
+        "napoletano": "'A vocca"
+    },
+    "81": {
+        "italiano": "I fiori",
+        "napoletano": "'E sciure"
+    },
+    "82": {
+        "italiano": "La tavola imbandita",
+        "napoletano": "'A tavula 'mbandita"
+    },
+    "83": {
+        "italiano": "Il maltempo",
+        "napoletano": "'O maletiempo"
+    },
+    "84": {
+        "italiano": "La chiesa",
+        "napoletano": "'A chiesa"
+    },
+    "85": {
+        "italiano": "Le anime del Purgatorio",
+        "napoletano": "Ll'aneme d' 'o priatorio"
+    },
+    "86": {
+        "italiano": "La bottega",
+        "napoletano": "'A puteca"
+    },
+    "87": {
+        "italiano": "I pidocchi",
+        "napoletano": "'E perucchie"
+    },
+    "88": {
+        "italiano": "I caciocavalli",
+        "napoletano": "'E casecavalle"
+    },
+    "89": {
+        "italiano": "La vecchia",
+        "napoletano": "'A vecchia"
+    },
+    "90": {
+        "italiano": "La paura",
+        "napoletano": "'A paura"
+    }
+}
