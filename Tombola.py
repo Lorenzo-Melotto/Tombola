@@ -2,7 +2,7 @@
 import random
 import json
 
-def main():
+def main() -> None:
     '''Main function'''
     alreadyRolled = [] #list to store the numbers already rolled
     
@@ -38,7 +38,7 @@ def main():
 
     print("Tombola finita!")
 
-def printBoard(ls):
+def printBoard(ls: list) -> None:
     '''Prints the board's state'''
     count = 1
     greenFont = "\33[0;32;40m" #ANSI code for green text
