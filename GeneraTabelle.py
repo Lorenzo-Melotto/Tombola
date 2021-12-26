@@ -8,6 +8,7 @@ def PrintTabella(tabella: list) -> None:
             elif number < 10: print(f" {number}", end=" ")
             else: print(number, end=" ")
         print("")
+    print("")
 
 def PickNumber(lowerRange: int, upperRange: int, alreadyRolled: set) -> int:
     '''Generates a valid random number between the range [lowerRange, upperRange]'''
