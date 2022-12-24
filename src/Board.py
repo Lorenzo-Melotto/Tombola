@@ -107,15 +107,78 @@ class Board:
       self._checkReward(count, i, 5)
 
   def _checkReward(self, count: int, row: int, cartella: int) -> None:
-    if count == Reward.AMBO.value:
-      if self.ambo_won == RewardState.NOT_WON:
-        print(f"{getRainbowString('AMBO')}! Cartella n°{cartella+1}, riga n°{(row+1)%3}")
-    if count == Reward.TERNO.value:
-      if self.terno_won == RewardState.NOT_WON:
-        print(f"{getRainbowString('TERNO')}! Cartella n°{cartella+1}, riga n°{(row+1)%3}")
-    if count == Reward.QUATERNA.value:
-      if self.quaterna_won == RewardState.NOT_WON:
-        print(f"{getRainbowString('QUATERNA')}! Cartella n°{cartella+1}, riga n°{(row+1)%3}")
-    if count == Reward.TOMBOLA.value:
-      if self.tombola_won == RewardState.NOT_WON:
-        print(f"{getRainbowString('TOMBOLA')}! Cartella n°{cartella+1}, riga n°{(row+1)%3}")
+    if count == Reward.AMBO.value: 
+      # ambo
+      if self.ambo_won == RewardState.NOT_WON and \
+         self.check_ambo[cartella][row%3] != RewardState.WON_BY_ME and \
+         self.check_ambo[cartella][row%3] != RewardState.WON_BY_OTHERS:
+        
+        print(f"{getRainbowString('AMBO')}! Cartella n°{cartella+1}, riga n°{((row)%3)+1}")
+        
+        # check who won
+        res = self._haskWhoWon(str(Reward.AMBO.name).lower())
+        if res == "1":
+          self.check_ambo[cartella][row%3] = RewardState.WON_BY_ME
+          self.ambo_won = RewardState.WON_BY_ME
+        else:
+          self.check_ambo[cartella][row%3] = RewardState.WON_BY_OTHERS
+          self.ambo_won = RewardState.WON_BY_OTHERS
+    if count == Reward.TERNO.value: 
+      #terno
+      if self.terno_won == RewardState.NOT_WON and \
+         self.check_ambo[cartella][row%3] != RewardState.WON_BY_ME:
+
+        print(f"{getRainbowString('TERNO')}! Cartella n°{cartella+1}, riga n°{((row)%3)+1}")
+        
+        # check who won
+        res = self._haskWhoWon(str(Reward.TERNO.name).lower())
+        if res == "1":
+          self.check_terno[cartella][row%3] = RewardState.WON_BY_ME
+          self.terno_won = RewardState.WON_BY_ME
+        else:
+          self.check_terno[cartella][row%3] = RewardState.WON_BY_OTHERS
+          self.terno_won = RewardState.WON_BY_OTHERS
+    if count == Reward.QUATERNA.value: 
+      #quaterna
+      if self.quaterna_won == RewardState.NOT_WON and \
+         self.check_terno[cartella][row%3] != RewardState.WON_BY_ME:
+
+        print(f"{getRainbowString('QUATERNA')}! Cartella n°{cartella+1}, riga n°{((row)%3)+1}")
+
+        # check who won
+        res = self._haskWhoWon(str(Reward.QUATERNA.name).lower())
+        if res == "1":
+          self.check_quaterna[cartella][row%3] = RewardState.WON_BY_ME
+          self.quaterna_won = RewardState.WON_BY_ME
+        else:
+          self.check_quaterna[cartella][row%3] = RewardState.WON_BY_OTHERS
+          self.quaterna_won = RewardState.WON_BY_OTHERS
+    if count == Reward.TOMBOLA.value: 
+      #tombola
+      if self.tombola_won == RewardState.NOT_WON and \
+         self.check_quaterna[cartella][row%3] != RewardState.WON_BY_ME:
+
+        print(f"{getRainbowString('TOMBOLA')}! Cartella n°{cartella+1}, riga n°{((row)%3)+1}")
+        
+        #check who won
+        res = self._haskWhoWon(str(Reward.TOMBOLA.name).lower())
+        if res == "1":
+          self.check_tombola[cartella][row%3] = RewardState.WON_BY_ME
+          self.tombola_won = RewardState.WON_BY_ME
+        else:
+          self.check_tombola[cartella][row%3] = RewardState.WON_BY_OTHERS
+          self.tombola_won = RewardState.WON_BY_OTHERS
+
+  def _haskWhoWon(self, reward: str) -> str:
+    who = None
+    while 1:
+        print(f"Chi ha fatto {reward}?\n"+
+            "1) Io;\n"+
+            "2) Un altro giocatore.\n"+
+        "Scelta: ", end="")
+        who = input()
+        if who in ["1", "2"]:
+            break
+        else:
+            print(f"{Fore.RED}Scelta non valida.{Fore.RESET}")
+    return who

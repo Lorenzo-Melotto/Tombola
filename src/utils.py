@@ -4,7 +4,7 @@ from colorama import Fore
 colorama.init(autoreset=True)
 
 def getRainbowString(text: str) -> str:
-    """Returns a string formatted to be displayed with rainbow colors"""
+    """Returns a string formatted to be displayed with rainbow colors letter by letter"""
     colors = [Fore.RED, Fore.YELLOW, Fore.GREEN, Fore.LIGHTBLUE_EX, Fore.LIGHTMAGENTA_EX]
     s = ""
     for i,l in enumerate(text):
@@ -12,6 +12,7 @@ def getRainbowString(text: str) -> str:
     return s + f"{Fore.RESET}"
 
 def getMultilineRainbowString(multiLineText: str) -> str:
+    """Returns a string formatted to be displayed with rainbow colors line by line"""
     # if is not multiline return the string unchanged
     if "\n" not in multiLineText: return multiLineText
     colors = [Fore.RED, Fore.YELLOW, Fore.GREEN, Fore.LIGHTBLUE_EX, Fore.LIGHTMAGENTA_EX]
@@ -23,4 +24,5 @@ def getMultilineRainbowString(multiLineText: str) -> str:
     return newString
 
 def clearScreen() -> None:
-  os.system("cls" if os.name=="nt" else "clear")
+    """Clears the terminal"""
+    os.system("cls" if os.name=="nt" else "clear")
