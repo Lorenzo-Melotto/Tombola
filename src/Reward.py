@@ -4,4 +4,5 @@ class Reward(Enum):
   AMBO = 2
   TERNO = 3
   QUATERNA = 4
-  TOMBOLA = 5
+  CINQUINA = 5
+  TOMBOLA = 15

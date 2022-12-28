@@ -38,10 +38,11 @@ def updateVittorie(board: Board) -> None:
             "1) Ambo;\n" +
             "2) Terno;\n" +
             "3) Quaterna;\n" +
-            "4) Tombola.\n" +
+            "4) Cinquina;\n" +
+            "5) Tombola.\n" +
         "Scelta: ", end="")
         res = input()
-        if res in ["1", "2", "3", "4"]:
+        if res in ["1", "2", "3", "4", "5"]:
             break
         else:
             print(f"{Fore.RED}Scelta non valida.{Fore.RESET}")
@@ -65,6 +66,8 @@ def updateVittorie(board: Board) -> None:
     elif res == "3":
         board.quaterna_won = state
     elif res == "4":
+        board.cinquina_won = state
+    elif res == "5":
         board.tombola_won = state
 
 def main() -> None:
@@ -99,9 +102,19 @@ def main() -> None:
 
         # DUBUG
         # alreadyRolled.append(counter)
+        # n = counter
         # counter += 1
 
         board.printBoard(alreadyRolled) #print the board's current state
+
+        #print the smorfia and the equivalent meaning in italian
+        try:
+            print("Numero estratto: " + Fore.LIGHTCYAN_EX + str(n) + Fore.RESET + "; " + smorfia[str(n)]["napoletano"] + " (" + smorfia[str(n)]["italiano"] + ")")
+        except KeyError:
+            print("Numero estratto: "+ Fore.LIGHTRED_EX + str(n) + Fore.RESET)
+
+        print("")
+        
         board.checkBoard(alreadyRolled) #check if the board has won
 
         check = False
@@ -115,19 +128,14 @@ def main() -> None:
         if board.quaterna_won != RewardState.NOT_WON:
             prizes += "QUATERNA, "
             check = True
+        if board.cinquina_won != RewardState.NOT_WON:
+            prizes += "CINQUINA, "
+            check = True
         if board.tombola_won != RewardState.NOT_WON:
             prizes += "TOMBOLA  "
             check = True
         if not check:
             prizes += "NESSUNO  "
-
-        #print the smorfia and the equivalent meaning in italian
-        try:
-            print("Numero estratto: " + Fore.LIGHTCYAN_EX + str(n) + Fore.RESET + "; " + smorfia[str(n)]["napoletano"] + " (" + smorfia[str(n)]["italiano"] + ")")
-        except KeyError:
-            print("Numero estratto: "+ Fore.LIGHTRED_EX + str(n) + Fore.RESET)
-
-        print("")
 
         print(f"{prizes[:-2]}\n")
 
@@ -144,16 +152,19 @@ def main() -> None:
     hasWonSomething = False
     print("Il banco ha vinto: ")
     if board.ambo_won == RewardState.WON_BY_ME:
-        print(" - AMBO")
+        print(f" - {Reward.AMBO.name}")
         hasWonSomething = True
     if board.terno_won == RewardState.WON_BY_ME:
-        print(" - TERNO")
+        print(f" - {Reward.TERNO.name}")
         hasWonSomething = True
     if board.quaterna_won == RewardState.WON_BY_ME:
-        print(" - QUATERNA")
+        print(f" - {Reward.QUATERNA.name}")
+        hasWonSomething = True
+    if board.cinquina_won == RewardState.WON_BY_ME:
+        print(f" - {Reward.CINQUINA.name}")
         hasWonSomething = True
     if board.tombola_won == RewardState.WON_BY_ME:
-        print(" - TOMBOLA")
+        print(f" - {Reward.TOMBOLA.name}")
         hasWonSomething = True
     if not hasWonSomething:
         print("Nessun premio :(")
